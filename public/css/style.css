@@ -1,0 +1,14 @@
+body {
+  background: #313131 !important;
+  color: #FFFFFF !important;
+}
+body header {
+  background: #000000;
+}
+body .container .currency-pair {
+  background: #212121;
+  color: #808080;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
