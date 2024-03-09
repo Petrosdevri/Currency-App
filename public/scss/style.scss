@@ -12,6 +12,12 @@ body {
             background: #212121;
             color: #808080;
             margin: 0 auto;
+
+            .currency {
+                select, input {
+                    height: 2em;
+                }
+            }
         }
     }
 }
