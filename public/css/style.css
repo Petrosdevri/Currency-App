@@ -11,5 +11,8 @@ body .container .currency-pair {
   color: #808080;
   margin: 0 auto;
 }
+body .container .currency-pair .currency select, body .container .currency-pair .currency input {
+  height: 2em;
+}
 
 /*# sourceMappingURL=style.css.map */

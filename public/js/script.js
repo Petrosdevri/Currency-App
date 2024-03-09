@@ -23,7 +23,7 @@ function convert() {
         .then(res => res.json())
         .then(res => {
             const rateValue = res.rates[`${toCurrency.value}`];
-            rate.innerHTML = `1 ${fromCurrency.value} = ${rateValue} ${toCurrency.value}`;
+            rate.innerHTML = `1 ${fromCurrency.value} = ${rateValue ? rateValue : ' '} ${toCurrency.value}`;
             toAmount.value = (rateValue * fromAmount.value).toFixed(2);
         })
         .catch(error => console.log('Error:', error));
