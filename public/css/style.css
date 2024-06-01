@@ -1,21 +1,26 @@
-body {
+html body {
   background: #313131 !important;
-  box-shadow: 2px 2px 10px #000000;
+  box-sizing: border-box;
   color: #FFFFFF !important;
 }
-body header {
+html body header {
   background: #000000;
+  box-shadow: 2px 2px 10px #000000;
 }
-body .container .currency-pair {
+html body .container-div .currency-pair {
   background: #212121;
   color: #808080;
-  margin: 0 auto;
 }
-body .container .currency-pair .currency select, body .container .currency-pair .currency input {
+html body .container-div .currency-pair .currency select, html body .container-div .currency-pair .currency input {
   background: #212121;
   border: 1px solid #808080;
   color: #FFFFFF;
   height: 2em;
+}
+@media screen and (max-width: 780px) {
+  html body .container-div .currency-pair .currency {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
