@@ -1,17 +1,17 @@
-body {
+html body {
     background: #313131 !important;
-    box-shadow: 2px 2px 10px #000000;
+    box-sizing: border-box;
     color: #FFFFFF !important;
 
     header {
         background: #000000;
+        box-shadow: 2px 2px 10px #000000;
     }
 
-    .container {
+    .container-div {
         .currency-pair {
             background: #212121;
             color: #808080;
-            margin: 0 auto;
 
             .currency {
                 select, input {
@@ -19,6 +19,10 @@ body {
                     border: 1px solid #808080;
                     color: #FFFFFF;
                     height: 2em;
+                }
+
+                @media screen and (max-width: 780px) {
+                    flex-direction: column;
                 }
             }
         }
